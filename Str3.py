@@ -20,7 +20,7 @@ st.write("De laadsessies die diep in de nacht worden gestart duren relatief kort
          stijgende trent te zien in oplaadtijd. De aangesloten tijd van meer dan 10 uur in de avonduren is natuurlijk te verklaren door de vele auto's\
          die de gehele nacht aan de laadpaal blijven staan.")
 
-df = pd.read_csv('/Users/christianrombouts/Downloads/Minor Data Science/Cases/Case 3/laadpaaldata.csv')
+df = pd.read_csv('laadpaaldata.csv')
 #df.isna().sum()
 df['Started'] = pd.to_datetime(df['Started'],format="%Y-%m-%d %H:%M:%S", errors='coerce')
 df['Startuur'] = df['Started'].dt.hour #Nieuwe kolom met startuur
